@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddVino">
+
+    <TextView
+        android:id="@+id/tv_id2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/id"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_id2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tv_nombre2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id2" />
+
+    <EditText
+        android:id="@+id/et_nombre2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_nombre2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tv_bodega2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/bodega"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre2"
+        android:fontFamily="sans-serif" />
+
+    <EditText
+        android:id="@+id/et_bodega2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="bodega"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_bodega2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tv_color2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/color"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bodega2" />
+
+    <EditText
+        android:id="@+id/et_color2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="color"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_color2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tv_origen2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/origen"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_color2" />
+
+    <EditText
+        android:id="@+id/et_origen2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="origen"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_origen2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tv_grado2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/grados"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_origen2" />
+
+    <EditText
+        android:id="@+id/et_grado2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="grados"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_grado2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tv_date2"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grado2" />
+
+    <EditText
+        android:id="@+id/et_fecha2"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="fecha"
+        android:importantForAutofill="no"
+        android:inputType="none|number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_date2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/bt_add2"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_fecha2"
+        app:layout_constraintTop_toBottomOf="@+id/et_fecha2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="140dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
